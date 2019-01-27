@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find Friend</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+
+        
+          <h2 class="text-center"><span class="fa fa-fire"></span>Survey Questions</h1>
+          <hr>
+         
+          <h3><strong>About You</strong></h3>
+          <h4>Name (Required)</h4>
+          <input type="text" name="" id="name" class="form-control" required>
+
+          <h4>Link to Photo Image</h4>
+          <input type="text" name="" id="photo" class="form-control" required>
+
+          <hr>
+
+          <h3><strong>Question 1</strong></h3>
+          <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+          <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 2</strong></h3>
+          <h4>You enjoy meeting new people.</h4>
+          <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 3</strong></h3>
+          <h4>Getting stuck in traffic is not an enjoyable thing for you.</h4>
+          <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 4</strong></h3>
+          <h4>You consider other people's feelings.</h4>
+          <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 5</strong></h3>
+          <h4>It is better to have the glass half-full rather than half-empty.</h4>
+          <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 6</strong></h3>
+          <h4>it is often difficult to relate to the feelings of others.</h4>
+          <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 7</strong></h3>
+          <h4>In a discussion, truth should be more important than people's sensitivities.</h4>
+          <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 8</strong></h3>
+          <h4>You rarely get carried away by fantasies and ideas.</h4>
+          <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 9</strong></h3>
+          <h4>You think that everyones ideas should be respected regardless of whether they are supported by facts.</h4>
+          <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <h3><strong>Question 10</strong></h3>
+          <h4>You feel more energetic after spending time with a group of people.</h4>
+          <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Agree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Disagree)</option>
+          </select>
+
+          <br>
+          <br>
+
+          <button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>Submit</button>
+          <hr>
+          <footer class="footer">
+            <div class="container">
+              <p><a href="/api/Routes">Friend Finder</a>
+            </div>
+          </footer>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button"><strong>Best Match</strong></button>
+
+          </div>
+          <div class="modal-body">
+            <h2 id="matchName"></h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+          
+
+  <script type="text/javascript">
+
+  $("#submit").on("click", function() {
+    
+    function validateForm() {
+      var isValid = true;
+      $(".form-control").each(function() {
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
+
+      $(".chosen-select").each(function() {
+
+        if ($(this).val() === "") {
+          isValid = false;
+        }
+      });
+      return isValid;
+    }
+
+    if (validateForm()) {
+      var userData = {
+        name: $("#name").val(),
+        photo: $("#photo").val(),
+        scores: [
+          $("#q1").val(),
+          $("#q2").val(),
+          $("#q3").val(),
+          $("#q4").val(),
+          $("#q5").val(),
+          $("#q6").val(),
+          $("#q7").val(),
+          $("#q8").val(),
+          $("#q9").val(),
+          $("#q10").val(),
+        ]
+      };
+      var currentURL = window.location.origin;
+
+      $.post(currentURL + "/api/friends", userData, function(data) {
+       $("#matchName").text(data.name);
+       $("#matchImg").attr("src", data.photo);
+       
+        $("#resultsModal").modal("toggle");
+        // alert("working");
+      });
+    };
+  });
+  </script>
+</body>
+</html>
